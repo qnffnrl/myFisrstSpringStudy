@@ -1,6 +1,7 @@
 package HWproject.firstspring.repository;
 
 import HWproject.firstspring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
