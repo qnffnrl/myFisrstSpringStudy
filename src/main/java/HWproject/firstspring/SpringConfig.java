@@ -1,6 +1,7 @@
 package HWproject.firstspring;
 
 
+import HWproject.firstspring.aop.TimeTraceAop;
 import HWproject.firstspring.repository.*;
 import HWproject.firstspring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,11 @@ public class SpringConfig {
     public MemberService memberService(){
         return new MemberService(memberRepository);
     }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop(){
+//        return new TimeTraceAop();
+//    }
 
 //    @Bean
 //    public MemberRepository memberRepository(){
