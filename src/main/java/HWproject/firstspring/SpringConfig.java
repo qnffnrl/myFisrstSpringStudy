@@ -2,6 +2,7 @@ package HWproject.firstspring;
 
 
 import HWproject.firstspring.repository.JdbcMemberRepository;
+import HWproject.firstspring.repository.JdbcTemplateMemberRepository;
 import HWproject.firstspring.repository.MemberRepository;
 import HWproject.firstspring.repository.MemoryMemberRepository;
 import HWproject.firstspring.service.MemberService;
@@ -29,7 +30,8 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository(){
 //        return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 
 }
